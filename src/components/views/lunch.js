@@ -1,15 +1,21 @@
 import React from 'react';
 import Menu from '../menuorden';
-import Enviar from '../botonenviar';
+import ListItems from '../ListItems'
 
 
 class Lunch extends React.Component {
     render() {
         return (
-            <div className="App">
-                <h1>Almuerzos!</h1>
-                <Menu />
-                <Enviar />
+            <div className="menu container">
+                <h1>Almuerzos:</h1>
+                <div className="row">
+                    <div className="col s12 m6">
+                        <Menu />
+                    </div>
+                    <div className="col s12 m5 offset-m1">
+                        <ListItems />
+                    </div>
+                </div>
             </div>
         )
     }

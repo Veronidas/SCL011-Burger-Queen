@@ -14,8 +14,8 @@ class Menu extends React.Component {
                 <h3>Orden del cliente: </h3>
                 <TodoList items={this.state.items} />
                 <form onSubmit={this.handleSubmit}>
-                    <div class="row s2">
-                        <div class="input-field col s3 center">
+                    <div className="row s2">
+                        <div className="input-field col s3 center">
                             <label className="grey-text text-darken-3" htmlFor=" new-todo">
                                 Item
                             </label>
@@ -25,7 +25,7 @@ class Menu extends React.Component {
                                 value={this.state.text}
                             />
                         </div>
-                        <div class="input-field col s1"></div>
+                        <div className="input-field col s1"></div>
                         <button>
                             Añadir #{this.state.items.length + 1}
                         </button>

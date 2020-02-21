@@ -5,6 +5,8 @@ import Home from './components/views/home';
 import Breakfast from './components/views/breakfast';
 import Lunch from './components/views/lunch';
 import SignIn from './components/Auth/Signin';
+import SignUp from './components/Auth/Signup';
+
 
 class App extends Component {
   render() {
@@ -16,9 +18,7 @@ class App extends Component {
           <Route exact path="/desayuno" component={Breakfast} />
           <Route exact path="/almuerzo" component={Lunch} />
           <Route exact path="/signin" component={SignIn} />
-          {/* <Route exact path="/signout" component={SignOut} /> */}
-
-
+          <Route exact path="/signup" component={SignUp} />
         </Switch>
       </BrowserRouter>
     )

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-class SignIn extends Component {
+class SignUp extends Component {
     state = {
-        name: "",
-        password: ""
+        firstName: "",
+        lastName: "",
+        password: "",
+        supPassword: ""
     }
     handleChange = (e) => {
         this.setState({
@@ -18,14 +20,22 @@ class SignIn extends Component {
         return (
             <div className="container">
                 <form onSubmit={this.handleSubmit} className="white">
-                    <h5 className="grey-text text-darken-3">Inicia Sesión</h5>
+                    <h5 className="grey-text text-darken-3">Nuevo Usuario</h5>
                     <div className="input-field">
-                        <label htmlFor="name">Nombre</label>
-                        <input type="text" id="name" onChange={this.handleChange} required />
+                        <label htmlFor="firstName">Nombre</label>
+                        <input type="text" id="firstName" onChange={this.handleChange} required />
+                    </div>
+                    <div className="input-field">
+                        <label htmlFor="lastNamee">Apellido</label>
+                        <input type="text" id="lastName" onChange={this.handleChange} required />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Clave</label>
                         <input type="password" id="password" onChange={this.handleChange} required />
+                    </div>
+                    <div className="input-field">
+                        <label htmlFor="supPassword">Clave del Supervisor:</label>
+                        <input type="password" id="supPassword" onChange={this.handleChange} required />
                     </div>
                     <div className="input-field">
                         <button className="btn pink lighten-1 z-depth-0">Inicia Sesión</button>
@@ -36,4 +46,4 @@ class SignIn extends Component {
     }
 }
 
-export default SignIn;
+export default SignUp;

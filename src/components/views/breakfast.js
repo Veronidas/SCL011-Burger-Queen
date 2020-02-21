@@ -6,12 +6,13 @@ class Breakfast extends React.Component {
     render() {
         return (
             <div className="menu container">
+                <h1>Desayunos:</h1>
                 <div className="row">
                     <div className="col s12 m6">
-                        <div className="col s12 m5 offset-m1">
-                            <Menu />
-                            <ListItems />
-                        </div>
+                        <Menu />
+                    </div>
+                    <div className="col s12 m5 offset-m1">
+                        <ListItems />
                     </div>
                 </div>
             </div>
