@@ -15,9 +15,9 @@ class Menu extends React.Component {
                 <TodoList items={this.state.items} />
                 <form onSubmit={this.handleSubmit}>
                     <div className="row s2">
-                        <div className="input-field col s3 center">
+                        <div className="input-field col s12">
                             <label className="grey-text text-darken-3" htmlFor=" new-todo">
-                                Item
+                                Ingrese el pedido:
                             </label>
                             <input
                                 id="new-todo" type="text"
