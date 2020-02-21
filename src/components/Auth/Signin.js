@@ -17,11 +17,11 @@ class SignIn extends Component {
                     <h5 className="grey-text text-darken-3">Inicia Sesión</h5>
                     <div className="input-field">
                         <label htmlFor="name">Nombre</label>
-                        <input type="text" id="name" onChange={this.handleChange} />
+                        <input type="text" id="name" onChange={this.handleChange} required />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Clave</label>
-                        <input type="text" id="password" onChange={this.handleChange} />
+                        <input type="password" id="password" onChange={this.handleChange} required />
                     </div>
                     <div className="input-field">
                         <button className="btn pink lighten-1 z-depth-0">Inicia Sesión</button>
