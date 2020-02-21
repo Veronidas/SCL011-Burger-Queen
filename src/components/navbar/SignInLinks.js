@@ -8,10 +8,10 @@ const SignedInLinks = () => {
     return (
         <div>
             <ul className="right">
-                <li><NavLink exact activeClassName="active-link" to="/desayuno">  Desayuno  </NavLink></li>
-                <li><NavLink exact activeClassName="active-link" to="/almuerzo">  Almuerzo  </NavLink></li>
-                <li><NavLink className="btn pink lighten-1" exact activeClassName="active-link" to="/signin">  Sign In  </NavLink></li>
-                <li><NavLink className="btn pink lighten-1" exact activeClassName="active-link" to="/signout"> Sign Out </NavLink>
+                <li><NavLink to="/desayuno">  Desayuno  </NavLink></li>
+                <li><NavLink to="/almuerzo">  Almuerzo  </NavLink></li>
+                <li><NavLink className="btn pink lighten-1" to="/signin">  Sign In  </NavLink></li>
+                <li><NavLink className="btn pink lighten-1" to="/signout"> Sign Out </NavLink>
                 </li>
             </ul>
             {/* <Switch>
