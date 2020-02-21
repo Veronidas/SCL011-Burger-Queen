@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SignedInLinks from './SignIn';
-import SignedOutLinks from './SignOut';
+import SignedInLinks from './SignInLinks';
+import SignedOutLinks from './SignOutLinks';
 
 
 

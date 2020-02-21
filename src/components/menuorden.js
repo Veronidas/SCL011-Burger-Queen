@@ -10,13 +10,13 @@ class Menu extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="menu container grey-text text-darken-3">
                 <h3>Orden del cliente: </h3>
                 <TodoList items={this.state.items} />
                 <form onSubmit={this.handleSubmit}>
                     <div class="row s2">
                         <div class="input-field col s3 center">
-                            <label htmlFor="new-todo">
+                            <label className="grey-text text-darken-3" htmlFor=" new-todo">
                                 Item
                             </label>
                             <input
@@ -31,7 +31,7 @@ class Menu extends React.Component {
                         </button>
                     </div>
                 </form>
-            </div>
+            </div >
         );
     }
 
