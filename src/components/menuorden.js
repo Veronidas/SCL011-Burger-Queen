@@ -14,17 +14,22 @@ class Menu extends React.Component {
                 <h3>Orden del cliente: </h3>
                 <TodoList items={this.state.items} />
                 <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="new-todo">
-
-                    </label>
-                    <input
-                        id="new-todo"
-                        onChange={this.handleChange}
-                        value={this.state.text}
-                    />
-                    <button>
-                        Añadir #{this.state.items.length + 1}
-                    </button>
+                    <div class="row s2">
+                        <div class="input-field col s3 center">
+                            <label htmlFor="new-todo">
+                                Item
+                            </label>
+                            <input
+                                id="new-todo" type="text"
+                                onChange={this.handleChange}
+                                value={this.state.text}
+                            />
+                        </div>
+                        <div class="input-field col s1"></div>
+                        <button>
+                            Añadir #{this.state.items.length + 1}
+                        </button>
+                    </div>
                 </form>
             </div>
         );

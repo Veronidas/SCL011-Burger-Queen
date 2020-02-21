@@ -1,26 +1,15 @@
-import React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
-import './App.css';
-import Home from './views/home'
-import Breakfast from './views/breakfast';
-import Lunch from './views/lunch';
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
 
-
-function App() {
-  return (
-    <div className="App">
-      <nav>
-        <NavLink exact activeClassName="active-link" to="/">  Home  </NavLink>
-        <NavLink exact activeClassName="active-link" to="/desayuno">  Desayunos  </NavLink>
-        <NavLink exact activeClassName="active-link" to="/almuerzo"> Almuerzos </NavLink>
-      </nav>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/desayuno" component={Breakfast} />
-        <Route exact path="/almuerzo" component={Lunch} />
-      </Switch>
-    </div >
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App;

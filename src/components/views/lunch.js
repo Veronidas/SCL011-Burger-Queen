@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from '../components/menuorden';
-import Enviar from '../components/botonenviar';
+import Menu from '../menuorden';
+import Enviar from '../botonenviar';
 
 
 class Lunch extends React.Component {
