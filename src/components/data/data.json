@@ -1,0 +1,68 @@
+{
+    "menu": {
+        "Desayunos": [
+            {
+                "id": 1,
+                "name": "café",
+                "price": 1000
+            },
+            {
+                "id": 2,
+                "name": "café con leche",
+                "price": 1200
+            },
+            {
+                "id": 3,
+                "name": "Sandwich de Jamón y Queso",
+                "price": 2000
+            },
+            {
+                "id": 4,
+                "name": "jugo natural",
+                "price": 1200
+            }
+        ],
+        "Almuerzos": [
+            {
+                "id": 5,
+                "name": "Hamburguesa simple",
+                "price": 4500
+            },
+            {
+                "id": 6,
+                "name": "Hamburgesa doble",
+                "price": 5500
+            },
+            {
+                "id": 7,
+                "name": "Papas fritas",
+                "price": 2000
+            },
+            {
+                "id": 8,
+                "name": "Aros de cebolla",
+                "price": 2200
+            },
+            {
+                "id": 9,
+                "name": "Agua pequeña (250ml)",
+                "price": 700
+            },
+            {
+                "id": 10,
+                "name": "Agua grande(750ml)",
+                "price": 1000
+            },
+            {
+                "id": 11,
+                "name": "Bebida pequeña (250ml)",
+                "price": 700
+            },
+            {
+                "id": 12,
+                "name": "Bebida grande(750ml)",
+                "price": 1000
+            }
+        ]
+    }
+}
