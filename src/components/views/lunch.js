@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from '../menuorden';
-import ListItems from '../ListItems'
+import ListItemsLunch from '../ListItemLunch'
 
 
 class Lunch extends React.Component {
@@ -10,7 +10,7 @@ class Lunch extends React.Component {
                 <h1>Almuerzos:</h1>
                 <div className="row">
                     <div className="col s12 m6">
-                        <ListItems />
+                        <ListItemsLunch />
                     </div>
                     <div className="col s12 m5 offset-m1">
                         <Menu />
