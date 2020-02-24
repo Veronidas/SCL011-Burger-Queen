@@ -9,10 +9,10 @@ class Breakfast extends React.Component {
                 <h1>Desayunos:</h1>
                 <div className="row">
                     <div className="col s12 m6">
-                        <Menu />
+                        <ListItems />
                     </div>
                     <div className="col s12 m5 offset-m1">
-                        <ListItems />
+                        <Menu />
                     </div>
                 </div>
             </div>
