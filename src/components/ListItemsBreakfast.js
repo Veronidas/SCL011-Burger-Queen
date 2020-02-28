@@ -10,22 +10,14 @@ class ListItemsBreakfast extends React.Component {
         this.setState({ items: counter });
     };
     render() {
-        const desayunos = data.desayunos.map((data) => {
-            return (
-                <div>
-                    <p>{data.name} $ {data.price}
-                        <button onClick={this.handleClick} className="btn pink accent-2">  +  </button>
-                        {this.state.items}
-                    </p>
-                </div>
-            )
-        });
         return (
             <div>
-                {desayunos}
-            </div>
+                <button onClick={this.handleClick} className="btn pink accent-2">  +  </button>
+                <ul>{data.desayunos.map((data) => <li key={data.id}>{data.name} $ {data.price}</li>)}</ul>
+                <span>{this.state.items}</span>
+            </div >
         )
-    }
+    };
 }
 
 export default ListItemsBreakfast;
