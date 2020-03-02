@@ -1,5 +1,5 @@
 {
-    "desayunos": [
+    "breakfast": [
         {
             "id": 1,
             "name": "café",
@@ -21,7 +21,7 @@
             "price": 1200
         }
     ],
-    "almuerzos": [
+    "lunch": [
         {
             "id": 5,
             "name": "Hamburguesa simple",

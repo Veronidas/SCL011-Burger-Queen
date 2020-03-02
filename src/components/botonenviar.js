@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Enviar extends React.Component {
+class Send extends React.Component {
     render() {
         return (
             <button className="btn pink lighten-1">Enviar</button>
@@ -8,4 +8,4 @@ class Enviar extends React.Component {
     }
 }
 
-export default Enviar;
+export default Send;

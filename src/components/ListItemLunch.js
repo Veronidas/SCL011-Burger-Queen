@@ -8,13 +8,13 @@ class ListItemsLunch extends React.Component {
     render() {
         return (
             <div>
-                <div>{almuerzos}</div>
+                <div>{lunchArray}</div>
             </div>
         )
     }
 }
 
-const almuerzos = data.almuerzos.map((data) => {
+const lunchArray = data.lunch.map((data) => {
     return (
         <div>
             <p>{data.name} $ {data.price} <button className="btn pink accent-2">  +  </button></p>
@@ -22,5 +22,4 @@ const almuerzos = data.almuerzos.map((data) => {
     )
 }
 )
-
 export default ListItemsLunch;
